@@ -29,17 +29,12 @@ Tech stack:
 - dbt-postgres (1.6.0)
 - PostgreSQL 10
 
-\\
-
 ---
 ### Workflow Overview in this practice
 
-  ![workflow](...)
-
-\\
+  ![workflow](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/1_PostgreSQL_ETL/docs/elt_workflow.png)
 
 ---
-\\
 
 ### Steps to run this ELT process:
 **Step 1:** Set up the virtual environment \\
@@ -69,7 +64,6 @@ Run the following command to set up dbt project:
 
   ![YAML file](...)
 
-\\
 
 Note: Running the dbt project from the command line in the current dbt project directory.
 
@@ -80,7 +74,6 @@ Note: Running the dbt project from the command line in the current dbt project d
 
   ![dbt project structure](...)
 
-\\
 
 - Configurations in *dbt_project.yml* file: Open YAML file (pdbt_project.yml) created in the dbt project's directory (This file is also automatically generated after running: dbt init [Project Name]). Set up relavant project configurations used in this practice (Reference: [dbt_project.yml]())
 - Run command: dbt seed — a new table will be created in the warehouse in dbt project's target schema, named *taxi_zone_lookup*
@@ -91,11 +84,11 @@ Reference:
 
 - Run command: dbt run
 
-\\
-
 ---
-\\
+
 ### dbt - Directed Acyclic Graph (DAG) 
 The DAG of how data flows after transformation step with dbt is as follows:
+
+  ![dag](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/1_PostgreSQL_ETL/docs/dbt-dag.png)
 
 
