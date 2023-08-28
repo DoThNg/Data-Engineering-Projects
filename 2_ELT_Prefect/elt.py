@@ -12,9 +12,9 @@ load_dotenv()
 
 DATA_DIR = "./dataset"
 
-# Run initial setup
-# Set up a local PostgreSQL Database.
 @task
+# Run initial setup.
+# Set up a local PostgreSQL Database.
 def db_connect(name = "db connection"):
     # Set connection to the newly created database 'TaxiDB'
     try:
@@ -52,7 +52,7 @@ def db_connect(name = "db connection"):
             conn.close()
 
 @task
-# Run 'load' workflow
+# Run 'data loading' task
 def elt(name = "load data"):
     # Create database connection
     try:
@@ -94,6 +94,7 @@ def elt(name = "load data"):
             conn.close()
 
 @flow
+# Create ELT workflow
 def run_etl_workflow(name = "elt workflow'"):
     # Connect to database
     db_connect()

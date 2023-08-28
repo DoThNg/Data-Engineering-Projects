@@ -19,7 +19,7 @@ The Dataset and Data Dictionary used in this practice can be found and downloade
 1. Dataset: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 2. Data Dictionary: https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_green.pdf
 
-Note: In this practice, for a quick implementation, dataset consists of data for taxi zone (csv file) and taxi trips (parquet files) only for the first 2 months of 2023:
+Note: In this practice, for a quick implementation, the dataset consists of data for taxi zone (csv file) and taxi trips (parquet files) only for the first 2 months of 2023:
 - taxi_zone_lookup.csv
 - green_tripdata_2023-01.parquet
 - green_tripdata_2023-02.parquet 
@@ -62,6 +62,7 @@ Run the following commands to set up dbt project:
 - Create a sub-folder 'seeds' in project folder and add the file to the seeds directory, with a .csv file extension (In this practice, *'taxi_zone_lookup.csv'* file will be used)
 - Create sub-folders *'staging'* and *'mart'* in folder *'models'*.
 - Save *.sql* files in sub-folders *'mart'* and *'staging'*
+
 Reference:
  -  *.sql* files in sub-folder *'mart'*: [models/mart](https://github.com/DoThNg/Data-Engineering-Projects/tree/main/2_ELT_Prefect/analytics/models/mart)
  - *.sql* files in sub-folder *'staging'*: [models/staging](https://github.com/DoThNg/Data-Engineering-Projects/tree/main/2_ELT_Prefect/analytics/models/staging)
