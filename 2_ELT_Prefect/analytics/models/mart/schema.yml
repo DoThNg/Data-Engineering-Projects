@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: GreenTaxi_transformed
+    description: table contains trip transactions with data transformed in certain formats. 
+
+  - name: TaxiZone
+    description: table contains location of taxi zones.
+
+  - name: GreenTaxi_analytics
+    description: a joined table of GreenTaxi_transformed and TaxiZone.

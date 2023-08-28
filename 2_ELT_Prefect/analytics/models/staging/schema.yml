@@ -1,0 +1,31 @@
+version: 2
+
+models:
+
+  - name: stg_greentaxi
+    description: Staging table for green taxi data
+    columns:
+      - name: trip_id
+        tests:
+          - unique
+          - not_null
+      - name: vendor_id 
+      - name: lpep_pickup_datetime
+      - name: lpep_dropoff_datetime
+      - name: store_and_fwd_flag 
+      - name: ratecode_id 
+      - name: pu_loc_id
+      - name: do_loc_id
+      - name: passenger_count 
+      - name: trip_distance 
+      - name: fare_amount 
+      - name: extra 
+      - name: mta_tax
+      - name: tip_amount 
+      - name: tolls_amount 
+      - name: ehail_fee 
+      - name: improvement_surcharge
+      - name: total_amount 
+      - name: payment_type 
+      - name: trip_type 
+      - name: congestion_surcharge
