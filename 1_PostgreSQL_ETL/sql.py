@@ -1,5 +1,3 @@
-# List of tables to create
-
 # 1. CREATE GREEN-TAXI TABLE
 extension_uuid_sql = ("""
                     CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
