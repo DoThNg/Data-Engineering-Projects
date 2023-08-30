@@ -46,7 +46,7 @@ Tech stack:
 
 **Step 3:** Set up a local PostgreSQL database (PostgreSQL 10 is used in this practice)
 
-**Step 4:** Store credential to create a database connection in a .env file (Reference: [env-template](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/1_PostgreSQL_ETL/env-template))
+**Step 4:** Store credentials to create a database connection in a .env file (Reference: [env-template](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/1_PostgreSQL_ETL/env-template))
 
 **Step 5:** Run: *python setup_tbl.py* (This will create a data table in the newly created database)
 
