@@ -1,5 +1,3 @@
-# List of tables to create
-
 # 1. CREATE GREEN-TAXI TABLE
 extension_uuid_sql = ("""
                     CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
@@ -36,7 +34,6 @@ greenTaxi_create_table_sql = ("""
                         """)
 
 # 2. INSERT RECORDS
-
 insert_trip_record_sql = ("""
 
                 INSERT INTO greentaxi (vendor_id, lpep_pickup_datetime, lpep_dropoff_datetime,
