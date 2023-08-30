@@ -75,7 +75,7 @@ Note: Running the dbt project from the command line in the current dbt project d
   ![dbt project structure](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/1_PostgreSQL_ETL/docs/dbt_project_structure.png)
 
 
-- Configurations in *dbt_project.yml* file: Open YAML file (dbt_project.yml) created in the dbt project's directory (This file is also automatically generated after running: dbt init [Project Name]). Set up relevant project configurations used in this practice (Reference: [dbt_project.yml](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/1_PostgreSQL_ETL/analytics/dbt_project.yml))
+- Configurations in *dbt_project.yml* file: Open YAML file (dbt_project.yml) created in the dbt project's directory (This file is also automatically generated after running: dbt init analytics). Set up relevant project configurations used in this practice (Reference: [dbt_project.yml](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/1_PostgreSQL_ETL/analytics/dbt_project.yml))
 - Run command: dbt seed (a new table will be created in the warehouse in dbt project's target schema, named *taxi_zone_lookup*)
 - Save *.sql* files in sub-folders *'mart'* and *'staging'* 
 
