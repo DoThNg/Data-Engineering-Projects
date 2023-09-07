@@ -25,7 +25,7 @@ Tech stack:
 ---
 ### Workflow Overview in this practice
 
-  ![workflow](...)
+  ![workflow](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/workflow.png)
 
 ---
 
@@ -38,7 +38,7 @@ Tech stack:
 
 **Step 3:** Set up a local PostgreSQL database (PostgreSQL 10 is used in this practice)
 
-**Step 4:** Store credentials to create a database connection in a .env file (Reference: [env-template]())
+**Step 4:** Store credentials to create a database connection in a .env file (Reference: [env-template](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/env-template))
 
 **Step 5:** Set up Mage project (For a quick setup of Mage project, reference this [docs](https://docs.mage.ai/getting-started/setup)).
 
@@ -53,6 +53,8 @@ Run the following commands to set up a project:
 
 The overall view of data pipeline is as follows:
 
-  ![data_pipeline](...)
+  ![data_pipeline](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/data_pipeline_project_structure.png)
 
 **Step 6:** Run: mage run data_pipeline etl_workflow
+
+[data_pipeline_run](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/data_pipeline.png)
