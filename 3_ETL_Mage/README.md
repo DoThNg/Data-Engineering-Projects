@@ -30,8 +30,8 @@ Tech stack:
 ---
 
 ### Steps to run the data pipeline with Mage:
-**Step 1:** Set up the virtual environment \\
-- Run: *python -m venv {virtualenv name}* \\
+**Step 1:** Set up the virtual environment
+- Run: *python -m venv {virtualenv name}*
 - Create a folder named *'dataset'* where the virtual env is created. (dataset will be downloaded and saved in this folder)
 
 **Step 2:** Run: *pip install -r requirements.txt* (This will install all relevant python packages for this practice)
@@ -44,15 +44,15 @@ Tech stack:
 
 Run the following commands to set up a project:
 - Project setup: mage start data_pipeline (In this Practice, Project Name is **data_pipeline**)
-- Workflow setup: Create a workflow named "etl_workflow" on Mage UI 
+- Workflow setup: Create a workflow named "**etl_workflow**" on Mage UI 
 - For database connection, Mage enables connection to PostgreSQL database. (For further info on setup, reference this [docs](https://docs.mage.ai/getting-started/setup)). Another method is to create own template for a database connection which will be applied in this practice.
 - The following files are used for data pipeline with Mage (These files are placed in the folder directories according to their tasks):
- - Task 1 [Extracting Data]: [elt_workflow/data_loaders]()
- - Task 2 [Transforming Data]: [elt_workflow/transformer]()
- - Task 3 [Loading Data]: [elt_workflow/data_exporters]()
+ - Task 1 [Extracting Data]: [data_pipeline/data_loaders](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/data_loaders/extract_taxi_data.py)
+ - Task 2 [Transforming Data]: [elt_workflow/transformer](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/transformers/transform_taxi_data.py)
+ - Task 3 [Loading Data]: [elt_workflow/data_exporters](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/data_exporters/load_data_to_postgresql.py)
 
 The overall view of data pipeline is as follows:
 
-  ![data pipeline](...)
+  ![data_pipeline](...)
 
 **Step 6:** Run: mage run data_pipeline etl_workflow
