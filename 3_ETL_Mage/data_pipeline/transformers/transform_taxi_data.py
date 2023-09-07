@@ -6,7 +6,6 @@ if 'transformer' not in globals():
 if 'test' not in globals():
     from mage_ai.data_preparation.decorators import test
 
-
 @transformer
 def transform(data: DataFrame, *args, **kwargs):
     """
@@ -70,7 +69,6 @@ def transform(data: DataFrame, *args, **kwargs):
                                 }, inplace = True)
 
     return data_rm_na
-
 
 @test
 def test_output(output, *args) -> None:

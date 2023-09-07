@@ -12,7 +12,6 @@ from sql import yellowTaxi_drop_table_sql, yellowTaxi_create_table_sql, extensio
 
 load_dotenv()
 
-
 @data_exporter
 def export_data(data, *args, **kwargs):
     """
@@ -96,7 +95,6 @@ def export_data(data, *args, **kwargs):
             conn.commit()
 
         cur.close()
-
 
         print("Records inserted successfully")
 
