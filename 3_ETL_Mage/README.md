@@ -3,7 +3,7 @@
 
 ### Introduction
 The objective of this practice is building a data pipeline using **Mage** - an open-source data pipeline tool. The workflow includes:
-1. **Task 1**: Extracting data (*parquet files*) from online source (website) to local computer.
+1. **Task 1**: Extracting data (*parquet files*) from online source (website) to local machine.
 2. **Task 2**: Transforming this data.
 3. **Task 3**: Loading transformed data into a local PostgreSQL database.
 
@@ -46,10 +46,10 @@ Run the following commands to set up a project:
 - For database connection, Mage enables connection to PostgreSQL database. (For further info on setup, reference this [docs](https://docs.mage.ai/getting-started/setup)). Another method is to create own template for a database connection which will be applied in this practice.
 - The following files are used for data pipeline with Mage (These files are placed in the folder directories according to their tasks):
  - Task 1 [Extracting Data]: [data_pipeline/data_loaders](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/data_loaders/extract_taxi_data.py)
- - Task 2 [Transforming Data]: [elt_workflow/transformer](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/transformers/transform_taxi_data.py)
- - Task 3 [Loading Data]: [elt_workflow/data_exporters](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/data_exporters/load_data_to_postgresql.py)
+ - Task 2 [Transforming Data]: [data_pipeline/transformer](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/transformers/transform_taxi_data.py)
+ - Task 3 [Loading Data]: [data_pipeline/data_exporters](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/data_exporters/load_data_to_postgresql.py)
 
-The overall view of data pipeline is as follows:
+The overall view of data pipeline folder is as follows:
 
   ![data_pipeline](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/data_pipeline_project_structure.png)
 
