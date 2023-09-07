@@ -20,8 +20,6 @@ Tech stack:
 - PostgreSQL 10
 - mage-ai (v0.9.18)
 
-\\
-
 ---
 ### Workflow Overview in this practice
 
@@ -57,4 +55,4 @@ The overall view of data pipeline is as follows:
 
 **Step 6:** Run: mage run data_pipeline etl_workflow
 
-[data_pipeline_run](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/data_pipeline.png)
+![data_pipeline_run](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/data_pipeline.png)
