@@ -1,1 +1,58 @@
+## Build a data pipeline quickly with Mage
+---
 
+### Introduction
+The objective of this practice is building a data pipeline using **Mage** - an open-source data pipeline tool. The workflow includes:
+1. **Task 1**: Extracting data (*parquet files*) from online source (website) to local computer.
+2. **Task 2**: Transforming this data.
+3. **Task 3**: Loading transformed data into a local PostgreSQL database.
+
+The above workflow will be developed with **Mage**. Further info on *Mage* can be found in the following: https://www.mage.ai/
+
+The dataset used in this practice is TLC Trip Record Data for yellow taxi (format: *parquet file*). For a quick experiment, the dataset only consists of the taxi trips in the first month of 2023. (*yellow_tripdata_2023-01.parquet*, Dataset - Retrieved September 7, 2023, from https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
+
+The Dataset and Data Dictionary used in this practice can be found and downloaded in the following:
+1. Dataset: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+2. Data Dictionary: https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
+
+Tech stack:
+- Python 3.10
+- PostgreSQL 10
+- mage-ai (v0.9.18)
+
+\\
+
+---
+### Workflow Overview in this practice
+
+  ![workflow](...)
+
+---
+
+### Steps to run the data pipeline with Mage:
+**Step 1:** Set up the virtual environment \\
+- Run: *python -m venv {virtualenv name}* \\
+- Create a folder named *'dataset'* where the virtual env is created. (dataset will be downloaded and saved in this folder)
+
+**Step 2:** Run: *pip install -r requirements.txt* (This will install all relevant python packages for this practice)
+
+**Step 3:** Set up a local PostgreSQL database (PostgreSQL 10 is used in this practice)
+
+**Step 4:** Store credentials to create a database connection in a .env file (Reference: [env-template]())
+
+**Step 5:** Set up Mage project (For a quick setup of Mage project, reference this [docs](https://docs.mage.ai/getting-started/setup)).
+
+Run the following commands to set up a project:
+- Project setup: mage start data_pipeline (In this Practice, Project Name is **data_pipeline**)
+- Workflow setup: Create a workflow named "etl_workflow" on Mage UI 
+- For database connection, Mage enables connection to PostgreSQL database. (For further info on setup, reference this [docs](https://docs.mage.ai/getting-started/setup)). Another method is to create own template for a database connection which will be applied in this practice.
+- The following files are used for data pipeline with Mage (These files are placed in the folder directories according to their tasks):
+ - Task 1 [Extracting Data]: [elt_workflow/data_loaders]()
+ - Task 2 [Transforming Data]: [elt_workflow/transformer]()
+ - Task 3 [Loading Data]: [elt_workflow/data_exporters]()
+
+The overall view of data pipeline is as follows:
+
+  ![data pipeline](...)
+
+**Step 6:** Run: mage run data_pipeline etl_workflow
