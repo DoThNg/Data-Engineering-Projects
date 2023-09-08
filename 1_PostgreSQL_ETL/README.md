@@ -38,7 +38,7 @@ Tech stack:
 
 ### Steps to run this ELT process:
 **Step 1:** Set up the virtual environment 
-- Run: *python -m venv {virtualenv name}* 
+- Run command: *python -m venv {virtualenv name}* 
 - Create a folder named *'dataset'* where the virtual env is created. 
 - Save the data files (*parquet files*) in this folder. 
 
@@ -48,7 +48,7 @@ Tech stack:
 
 **Step 4:** Store credentials to create a database connection in a .env file (Reference: [env-template](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/1_PostgreSQL_ETL/env-template))
 
-**Step 5:** Run: *python setup_tbl.py* (This will create a data table in the newly created database)
+**Step 5:** Run command: `python setup_tbl.py` (This will create a data table in the newly created database)
 
 **Step 6:** Run command: `python elt.py` (This step is about loading data (*parquet files*) to the newly created data table)
 
