@@ -43,7 +43,7 @@ Tech stack:
 Run the following commands to set up a project:
 - Project setup: mage start data_pipeline (In this Practice, Project Name is **data_pipeline**)
 - Workflow setup: Create a workflow named "**etl_workflow**" on Mage UI 
-- For database connection, Mage enables connection to PostgreSQL database. (For further info on setup, reference this [docs](https://docs.mage.ai/getting-started/setup)). Another method is to create own template for a database connection which will be applied in this practice.
+- For database connection, Mage enables connection to PostgreSQL database (For further info on setup, reference this [docs](https://docs.mage.ai/getting-started/setup)). Another method is to create a **Generic** block (no template) for a database connection - This method will be applied in this practice.
 - The following files are used for data pipeline with Mage (These files are placed in the folder directories according to their tasks):
  - Task 1 [Extracting Data]: [data_pipeline/data_loaders](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/data_loaders/extract_taxi_data.py)
  - Task 2 [Transforming Data]: [data_pipeline/transformer](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/transformers/transform_taxi_data.py)
@@ -53,6 +53,9 @@ The overall view of data pipeline folder is as follows:
 
   ![data_pipeline](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/data_pipeline_project_structure.png)
 
-**Step 6:** Run: mage run data_pipeline etl_workflow
+**Step 6:** Run command: 
+'''
+mage run data_pipeline etl_workflow
+'''
 
 ![data_pipeline_run](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/data_pipeline.png)
