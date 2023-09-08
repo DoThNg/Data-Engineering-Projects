@@ -29,10 +29,12 @@ Tech stack:
 
 ### Steps to run the data pipeline with Mage:
 **Step 1:** Set up the virtual environment
-- Run: *python -m venv {virtualenv name}*
+- Run command: *python -m venv {virtualenv name}*
 - Create a folder named *'dataset'* where the virtual env is created. (dataset will be downloaded and saved in this folder)
 
-**Step 2:** Run: *pip install -r requirements.txt* (This will install all relevant python packages for this practice)
+**Step 2:** Run command: 
+`pip install -r requirements.txt` 
+(This will install all relevant python packages for this practice)
 
 **Step 3:** Set up a local PostgreSQL database (PostgreSQL 10 is used in this practice)
 
@@ -41,7 +43,9 @@ Tech stack:
 **Step 5:** Set up Mage project (For a quick setup of Mage project, reference this [docs](https://docs.mage.ai/getting-started/setup)).
 
 Run the following commands to set up a project:
-- Project setup: mage start data_pipeline (In this Practice, Project Name is **data_pipeline**)
+- Project setup:
+  `mage start data_pipeline`
+  (In this Practice, Project Name is **data_pipeline**)
 - Workflow setup: Create a workflow named "**etl_workflow**" on Mage UI 
 - For database connection, Mage enables connection to PostgreSQL database (For further info on setup, reference this [docs](https://docs.mage.ai/getting-started/setup)). Another method is to create a **Generic** block (no template) for a database connection - This method will be applied in this practice.
 - The following files are used for data pipeline with Mage (These files are placed in the folder directories according to their tasks):
