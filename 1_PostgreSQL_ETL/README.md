@@ -42,7 +42,7 @@ Tech stack:
 - Create a folder named *'dataset'* where the virtual env is created. 
 - Save the data files (*parquet files*) in this folder. 
 
-**Step 2:** Run: *pip install -r requirements.txt* (This will install all relevant python packages for this practice)
+**Step 2:** Run command: `pip install -r requirements.txt` (This will install all relevant python packages for this practice)
 
 **Step 3:** Set up a local PostgreSQL database (PostgreSQL 10 is used in this practice)
 
@@ -50,7 +50,7 @@ Tech stack:
 
 **Step 5:** Run: *python setup_tbl.py* (This will create a data table in the newly created database)
 
-**Step 6:** Run: *python elt.py* (This step is about loading data (*parquet files*) to the newly created data table)
+**Step 6:** Run command: `python elt.py` (This step is about loading data (*parquet files*) to the newly created data table)
 
 **Step 7:** Using dbt to transform the loaded data. 
 
@@ -83,7 +83,7 @@ Reference:
  -  *.sql* files in sub-folder *'mart'*: [models/mart](https://github.com/DoThNg/Data-Engineering-Projects/tree/main/1_PostgreSQL_ETL/analytics/models/mart)
  - *.sql* files in sub-folder *'staging'*: [models/staging](https://github.com/DoThNg/Data-Engineering-Projects/tree/main/1_PostgreSQL_ETL/analytics/models/staging)
 
-- Run command: dbt run
+- Run command: `dbt run`
 
 ---
 
