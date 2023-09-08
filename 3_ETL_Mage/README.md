@@ -33,8 +33,7 @@ Tech stack:
 - Create a folder named *'dataset'* where the virtual env is created. (dataset will be downloaded and saved in this folder)
 
 **Step 2:** Run command: 
-`pip install -r requirements.txt` 
-(This will install all relevant python packages for this practice)
+`pip install -r requirements.txt` (This will install all relevant python packages for this practice)
 
 **Step 3:** Set up a local PostgreSQL database (PostgreSQL 10 is used in this practice)
 
@@ -44,9 +43,8 @@ Tech stack:
 
 Run the following commands to set up a project:
 - Project setup:
-  `mage start data_pipeline`
-  (In this Practice, Project Name is **data_pipeline**)
-- Workflow setup: Create a workflow named "**etl_workflow**" on Mage UI 
+  `mage start data_pipeline` (In this Practice, Project Name is **data_pipeline**)
+- Workflow setup: Create a pipeline named "**etl_workflow**" on Mage UI. 
 - For database connection, Mage enables connection to PostgreSQL database (For further info on setup, reference this [docs](https://docs.mage.ai/getting-started/setup)). Another method is to create a **Generic** block (no template) for a database connection - This method will be applied in this practice.
 - The following files are used for data pipeline with Mage (These files are placed in the folder directories according to their tasks):
  - Task 1 [Extracting Data]: [data_pipeline/data_loaders](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/data_loaders/extract_taxi_data.py)
