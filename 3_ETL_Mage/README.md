@@ -54,8 +54,7 @@ The overall view of data pipeline folder is as follows:
   ![data_pipeline](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/data_pipeline_project_structure.png)
 
 **Step 6:** Run command: 
-'''
-mage run data_pipeline etl_workflow
-'''
+
+`mage run data_pipeline etl_workflow`
 
 ![data_pipeline_run](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/data_pipeline.png)
