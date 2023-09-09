@@ -7,7 +7,7 @@ The objective of this practice is building a data pipeline using **Mage** - an o
 2. **Task 2**: Transforming this data.
 3. **Task 3**: Loading transformed data into a local PostgreSQL database.
 
-The above workflow will be developed with **Mage**. Further info on *Mage* can be found in the following: https://www.mage.ai/
+The above workflow will be developed with **Mage**. Further info on Mage can be found in the following: https://www.mage.ai/
 
 The dataset used in this practice is TLC Trip Record Data for yellow taxi (format: *parquet file*). For a quick experiment, the dataset only consists of the taxi trips in the first month of 2023. (*yellow_tripdata_2023-01.parquet*, Dataset - Retrieved September 7, 2023, from https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 
