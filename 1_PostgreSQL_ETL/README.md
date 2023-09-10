@@ -37,16 +37,18 @@ Tech stack:
 ---
 
 ### Steps to run this ELT process:
-**Step 1:** Set up the virtual environment 
-- Run command: *python -m venv {virtualenv name}* 
+**Step 1:** Set up the virtual environment
+- Create a folder for this practice.
+- Run command: *python -m venv {virtualenv name}* in this folder's directory.
 - Create a folder named *'dataset'* where the virtual env is created. 
-- Save the data files (*parquet files*) in this folder. 
+- Save the data files (*parquet files*) in this folder.
+- Save following files [setup_tbl.py](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/1_PostgreSQL_ETL/setup_tbl.py), [sql.py](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/1_PostgreSQL_ETL/sql.py), [elt.py](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/1_PostgreSQL_ETL/elt.py) in the folder created for this practice.  
 
 **Step 2:** Run command: `pip install -r requirements.txt` (This will install all relevant python packages for this practice)
 
 **Step 3:** Set up a local PostgreSQL database (PostgreSQL 10 is used in this practice)
 
-**Step 4:** Store credentials to create a database connection in a .env file (Reference: [env-template](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/1_PostgreSQL_ETL/env-template))
+**Step 4:** Store credentials to create a database connection in a `.env` file and store this file in the folder created for this practice (Reference: [env-template](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/1_PostgreSQL_ETL/env-template))
 
 **Step 5:** Run command: `python setup_tbl.py` (This will create a data table in the newly created database)
 
