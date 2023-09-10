@@ -59,7 +59,7 @@ Run the following commands to set up a project:
 :
 Each task represents a building block of the data pipeline. All blocks created in this practice are **Generic (no template)**, illustrated as follows: 
 
-  ![Generic_Block](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/code_block.png)
+![Generic_Block](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/code_block.png)
 
 The overall view of data pipeline folder is as follows:
 
