@@ -1,4 +1,4 @@
-# 1. CREATE GREEN-TAXI TABLE
+# 1. CREATE YELLOW-TAXI TABLE
 extension_uuid_sql = ("""
                     CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
                       """)
