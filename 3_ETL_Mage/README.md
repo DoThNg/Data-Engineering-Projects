@@ -22,7 +22,7 @@ The Dataset and Data Dictionary used in this practice can be found and downloade
 Tech stack:
 - Python 3.10
 - PostgreSQL 10
-- mage-ai (v0.9.18)
+- mage-ai (0.9.18)
 - scikit-learn (1.3.0)
 
 ---
