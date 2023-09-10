@@ -33,7 +33,7 @@ Tech stack:
 
 ### Steps to run the data pipeline with Mage:
 **Step 1:** Set up the virtual environment
-- Run command: *python -m venv {virtualenv name}*
+- Run command: `python -m venv {virtualenv name}`
 - Create a folder named 'dataset' where the virtual env is created. (dataset will be downloaded and saved in this folder)
 
 **Step 2:** Run command: 
