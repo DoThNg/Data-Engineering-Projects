@@ -23,6 +23,7 @@ Tech stack:
 - Python 3.10
 - PostgreSQL 10
 - mage-ai (v0.9.18)
+- scikit-learn (1.3.0)
 
 ---
 ### Workflow Overview in this practice
