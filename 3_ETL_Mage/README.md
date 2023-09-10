@@ -7,9 +7,11 @@ The objective of this practice is building a data pipeline using **Mage** - an o
 2. **Task 2**: Transforming this data.
 3. **Task 3**: Loading transformed data into a local PostgreSQL database.
 4. **Side Task** [Optional]: Buidling a simple ML model to predict the fee (excluding tip amount) paid for a taxi trip with data loaded to the local PostgreSQL database.
-**Note**: The focus of this practice is about building a data pipline (Task 1, Task 2 and Task 3) with Mage. The side task of building a ML model is optional, however it can be easily integrated into the data pipeline.  
+**Note**: The focus of this practice is about building a data pipline (Task 1, Task 2 and Task 3) with Mage. The side task of building a ML model is optional, however if it is implemented, this task can be easily integrated into the data pipeline.  
 
-The above workflow will be developed with **Mage** (The workflow is composed of buidling blocks where each block represents a task). Further info on Mage can be found in the following: https://www.mage.ai/
+The above workflow will be developed with **Mage** (The workflow is composed of buidling blocks where each block represents a task). Further info on Mage can be found in the following: https://www.mage.ai/. The overview of the above workflow on Mage UI is as follows:
+
+  ![ml_data_pipeline](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/ml_data_pipeline.png)
 
 The dataset used in this practice is TLC Trip Record Data for yellow taxi (format: *parquet file*). For a quick experiment, the dataset only consists of the taxi trips in the first month of 2023. (*yellow_tripdata_2023-01.parquet*, Dataset - Retrieved September 7, 2023, from https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 
@@ -53,11 +55,11 @@ Run the following commands to set up a project:
    - Task 1 [Extracting Data]: [data_pipeline/data_loaders](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/data_loaders/extract_taxi_data.py)
    - Task 2 [Transforming Data]: [data_pipeline/transformer](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/transformers/transform_taxi_data.py)
    - Task 3 [Loading Data]: [data_pipeline/data_exporters](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/data_exporters/load_data_to_postgresql.py)
-   - ML model Task [Optional]: [data_pipeline/data_loaders]()
+   - ML model Task [Optional]: [data_pipeline/data_loaders](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/data_loaders/ml_taxi_model.py)
 :
 Each task represents a building block of the data pipeline. All blocks created in this practice are **Generic (no template)**, illustrated as follows: 
 
-![Generic_Block](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/code_block.png)
+  ![Generic_Block](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/code_block.png)
 
 The overall view of data pipeline folder is as follows:
 
@@ -67,4 +69,4 @@ The overall view of data pipeline folder is as follows:
 
 `mage run data_pipeline etl_workflow`
 
-![data_pipeline_run](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/data_pipeline.png)
+  ![data_pipeline_run](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/data_pipeline.png)
