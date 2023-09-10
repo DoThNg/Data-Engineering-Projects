@@ -6,7 +6,7 @@ The objective of this practice is building a data pipeline using **Mage** - an o
 1. **Task 1**: Extracting data (*parquet files*) from online source (website) to local machine.
 2. **Task 2**: Transforming this data.
 3. **Task 3**: Loading transformed data into a local PostgreSQL database.
-4. **Side Task** [Optional]: Buidling a simple ML model to predict the fee (excluding tip amount) paid for a taxi trip with data loaded to the local PostgreSQL database.
+4. **Side Task** [Optional]: Buidling a simple ML model to predict the fee (excluding tip amount) paid for a taxi trip based on data loaded to the local PostgreSQL database in Task 3.
 **Note**: The focus of this practice is about building a data pipline (Task 1, Task 2 and Task 3) with Mage. The side task of building a ML model is optional, however if it is implemented, this task can be easily integrated into the data pipeline.  
 
 The above workflow will be developed with **Mage** (The workflow is composed of buidling blocks where each block represents a task). Further info on Mage can be found in the following: https://www.mage.ai/. The overview of the above workflow on Mage UI is as follows:
