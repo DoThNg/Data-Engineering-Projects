@@ -35,6 +35,7 @@ Tech stack:
 **Step 1:** Set up the virtual environment
 - Run command: `python -m venv {virtualenv name}`
 - Create a folder named `dataset` where the virtual env is created (The dataset will be downloaded and saved in this folder)
+- Store the [sql.py](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/sql.py) where the virtual env is created ((The file contains sql queries used in this practice)
 
 **Step 2:** Run command: 
 `pip install -r requirements.txt` (This will install all relevant python packages for this practice)
