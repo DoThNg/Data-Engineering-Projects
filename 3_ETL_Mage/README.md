@@ -46,7 +46,7 @@ Tech stack:
 Run the following commands to set up a project:
 - Project setup:
   `mage start data_pipeline` (In this Practice, Project Name is **data_pipeline**)
-- Pipeline setup: Create a new pipeline named "**etl_workflow**" on Mage UI (To create a new pipeline (**Standard (batch)**) on Mage UI, reference this [docs](https://docs.mage.ai/design/data-pipeline-management)).
+- Pipeline setup: Create a new pipeline named `etl_workflow` on Mage UI (To create a new pipeline (**Standard (batch)**) on Mage UI, reference this [docs](https://docs.mage.ai/design/data-pipeline-management)).
 - For database connection, Mage enables connection to PostgreSQL database (For further info on setup, reference this [docs](https://docs.mage.ai/getting-started/setup)). Another method is to create a **Generic** block (no template) for a database connection - This method will be applied in this practice.
 
 - The following files are used for data pipeline with Mage (These files are placed in the folder directories according to their tasks):
@@ -57,7 +57,7 @@ Run the following commands to set up a project:
 :
 Each task represents a building block of the data pipeline. All blocks created in this practice are **Generic (no template)**, illustrated as follows: 
 
-![Generic_Block]()
+![Generic_Block](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/code_block.png)
 
 The overall view of data pipeline folder is as follows:
 
