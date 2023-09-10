@@ -44,7 +44,7 @@ Tech stack:
 
 **Step 3:** Set up a local PostgreSQL database (PostgreSQL 10 is used in this practice)
 
-**Step 4:** Store credentials to create a database connection in a .env file and store this file in the folder where the virtual env is created (Reference: [env-template](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/env-template))
+**Step 4:** Store credentials to create a database connection in a `.env` file and store this file in the folder where the virtual env is created (Reference: [env-template](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/env-template))
 
 **Step 5:** Set up Mage project (For a quick setup of Mage project, reference this [docs](https://docs.mage.ai/getting-started/setup)).
 
