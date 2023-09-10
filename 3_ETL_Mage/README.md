@@ -7,7 +7,7 @@ The objective of this practice is building a data pipeline using **Mage** - an o
 2. **Task 2**: Transforming this data.
 3. **Task 3**: Loading transformed data into a local PostgreSQL database.
 4. **Side Task** [Optional]: Buidling a simple ML model to predict the fee (excluding tip amount) paid for a taxi trip based on data loaded to the local PostgreSQL database in Task 3.
-**Note**: The focus of this practice is about building a data pipline (Task 1, Task 2 and Task 3) with Mage. The side task of building a ML model is optional, however if it is implemented, this task can be easily integrated into the data pipeline.  
+**Note**: The focus of this practice is about building a data pipline (Task 1, Task 2 and Task 3) with Mage. The side task of building a Machine Learning (ML) model is optional, however if it is implemented, this task can be easily integrated into the data pipeline.  
 
 The above workflow will be developed with **Mage** (The workflow is composed of buidling blocks where each block represents a task). Further info on Mage can be found in the following: https://www.mage.ai/. The overview of the above workflow on Mage UI is as follows:
 
@@ -34,7 +34,7 @@ Tech stack:
 ### Steps to run the data pipeline with Mage:
 **Step 1:** Set up the virtual environment
 - Run command: `python -m venv {virtualenv name}`
-- Create a folder named 'dataset' where the virtual env is created. (dataset will be downloaded and saved in this folder)
+- Create a folder named `dataset` where the virtual env is created. (dataset will be downloaded and saved in this folder)
 
 **Step 2:** Run command: 
 `pip install -r requirements.txt` (This will install all relevant python packages for this practice)
