@@ -1,6 +1,6 @@
 # 1. CREATE YELLOW-TAXI TABLE
 extension_uuid_sql = ("""
-                    CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+                      CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
                       """)
 
 yellowTaxi_drop_table_sql = ("""
@@ -33,10 +33,8 @@ yellowTaxi_create_table_sql = ("""
 
 # 2. INSERT RECORDS
 insert_trip_record_sql = ("""
-
-                INSERT INTO yellowtaxi (tpep_pickup_datetime, tpep_dropoff_datetime, passenger_count, trip_distance, rate_code_des, 
-                                        pmt_type_des, fare_amount, extra, mta_tax, tip_amount, tolls_amount, improvement_surcharge,
-                                        total_amount, congestion_surcharge, airport_fee, pu_hour, do_hour, travel_day, fee_per_mile)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
-                           
-                """)
+                          INSERT INTO yellowtaxi (tpep_pickup_datetime, tpep_dropoff_datetime, passenger_count, trip_distance, rate_code_des, 
+                                                  pmt_type_des, fare_amount, extra, mta_tax, tip_amount, tolls_amount, improvement_surcharge,
+                                                  total_amount, congestion_surcharge, airport_fee, pu_hour, do_hour, travel_day, fee_per_mile)
+                          VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);        
+                          """)
