@@ -61,7 +61,7 @@ Run the following commands to set up a project:
    - Task 3 [Loading Data]: [data_pipeline/data_exporters](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/data_exporters/load_data_to_postgresql.py)
    - ML model Task [Optional]: [data_pipeline/data_loaders](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/data_pipeline/data_loaders/ml_taxi_model.py)
 
-Each task represents a building block of the data pipeline. All blocks created in this practice are **Generic (no template)**, illustrated as follows: 
+Each task represents a building block of the data pipeline and can be connected directly through the Mage UI. All blocks created in this practice are **Generic (no template)**, illustrated as follows: 
 
 ![Generic_Block](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/3_ETL_Mage/docs/code_block.png)
 
