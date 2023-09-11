@@ -42,7 +42,7 @@ Tech stack:
 
 **Step 5:** Create assets for the data pipeline
 
-- The following files are used for data pipeline with Dagster (These files are placed in the **~/elt-project/etl_project directory**):
+- The following files are used for data pipeline with Dagster (These files are placed in the **~/elt-project/etl_project** directory):
 
     - [etl-project/etl_project/sql.py](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/4_ETL_Dagster/etl-project/etl_project/sql.py)
     - Task 1 [Extracting Data]: [etl-project/etl_project/extract_data_from_source.py](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/4_ETL_Dagster/etl-project/etl_project/extract_taxi_data.py)
