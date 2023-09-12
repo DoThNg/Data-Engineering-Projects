@@ -5,6 +5,7 @@
 This is just a simple practice to perform ELT process, including:
 1. **Task 1**: Loading files (*.parquet*) into a local PostgreSQL database.
 2. **Task 2**: Transforming dataset with dbt. The transformed dataset can be used to build BI Dashboards later.
+**Note:** The above tasks are run without any workflow orchestration tools - another practice with workflow orchestration implemented can be found in this [repo](https://github.com/DoThNg/Data-Engineering-Projects/tree/main/2_ELT_Prefect).   
 
 The dataset used in this practice include:
 1. TLC Trip Record Data for green taxi (format: *parquet files*).
