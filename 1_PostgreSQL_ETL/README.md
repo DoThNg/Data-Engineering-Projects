@@ -82,8 +82,8 @@ Note: Running the dbt project from the command line in the current dbt project d
 - Save *.sql* files in sub-folders *'mart'* and *'staging'* 
 
 Reference:
- -  *.sql* files in sub-folder *'mart'*: [models/mart](https://github.com/DoThNg/Data-Engineering-Projects/tree/main/1_PostgreSQL_ETL/analytics/models/mart)
- - *.sql* files in sub-folder *'staging'*: [models/staging](https://github.com/DoThNg/Data-Engineering-Projects/tree/main/1_PostgreSQL_ETL/analytics/models/staging)
+   - *.sql* files in sub-folder *'mart'*: [models/mart](https://github.com/DoThNg/Data-Engineering-Projects/tree/main/1_PostgreSQL_ETL/analytics/models/mart)
+   - *.sql* files in sub-folder *'staging'*: [models/staging](https://github.com/DoThNg/Data-Engineering-Projects/tree/main/1_PostgreSQL_ETL/analytics/models/staging)
 
 - Run command: `dbt run`
 
