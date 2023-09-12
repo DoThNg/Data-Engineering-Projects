@@ -67,10 +67,10 @@ Run the following commands to set up dbt project:
   ![YAML file](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/1_PostgreSQL_ETL/docs/dbt_yaml_file.png)
 
 
-Note: Running the dbt project from the command line in the current dbt project directory.
+**Note:** Running the dbt project from the command line in the current dbt project directory.
 
-- Test connection to the local PostgreSQL database: dbt debug 
-- Create a sub-folder 'seeds' in project folder and add the file to the seeds directory, with a .csv file extension (In this practice, `taxi_zone_lookup.csv` file will be used)
+- To test connection to the local PostgreSQL database, run command: `dbt debug` 
+- Create a sub-folder `seeds` in project folder and add the file to the seeds directory, with a `.csv` file extension (In this practice, `taxi_zone_lookup.csv` file will be used)
 - Create sub-folders `staging` and `mart` in folder `models`. 
 - After this setup, the overall project structure is as follows: 
 
