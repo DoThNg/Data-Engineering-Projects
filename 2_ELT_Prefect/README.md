@@ -43,8 +43,8 @@ Tech stack:
 
 ### Steps to run this ELT process with Prefect:
 **Step 1:** Set up the virtual environment
-- Run commnad: *python -m venv {virtualenv name}* 
-- Create a folder named *'dataset'* where the virtual env is created. 
+- Run commnad: `python -m venv {virtualenv name}` 
+- Create a folder named `dataset` where the virtual env is created. 
 - Save the data files (*parquet files*) in this folder. 
 
 **Step 2:** Run command: `pip install -r requirements.txt` (This will install all relevant python packages for this practice)
@@ -56,16 +56,15 @@ Tech stack:
 **Step 5:** Set up dbt project (For a quick setup of dbt project, reference this [docs](https://docs.getdbt.com/quickstarts/manual-install?step=2)). 
 
 Run the following commands to set up dbt project: 
-- Project setup: dbt init analytics (In this Practice, Project Name is **analytics**)
+- Project setup: `dbt init analytics` (In this Practice, Project Name is **analytics**)
 - Create a YAML file (*profiles.yml*) in the **./analytics/** directory (Reference: [profiles.yml](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/2_ELT_Prefect/analytics/profiles.yml)). (Note: *profiles.yml* is generally placed outside of dbt project to avoid sensitive credentials being checked in to version control, however in this practice, for just one-time local implementation, this file and *dbt_project.yml* will be in the same directory)
-- Provide info (e.g., host, port, user, etc.) related to PostgreSQL database in this YAML file (*profiles.yml*). For this practice, set 'dev' to 'target' (target: dev))
-- Create a sub-folder 'seeds' in project folder and add the file to the seeds directory, with a .csv file extension (In this practice, *'taxi_zone_lookup.csv'* file will be used)
-- Create sub-folders *'staging'* and *'mart'* in folder *'models'*.
-- Save *.sql* files in sub-folders *'mart'* and *'staging'*
-
+- Provide info (e.g., host, port, user, etc.) related to PostgreSQL database in this YAML file - `profiles.yml`. For this practice, set 'dev' to 'target' (target: dev))
+- Create a sub-folder 'seeds' in project folder and add the file to the seeds directory, with a .csv file extension (In this practice, `taxi_zone_lookup.csv` file will be used)
+- Create sub-folders `staging` and `mart` in folder `models`.
+- Save `.sql` files in sub-folders `mart` and `staging`
 Reference:
- - *.sql* files in sub-folder *'mart'*: [models/mart](https://github.com/DoThNg/Data-Engineering-Projects/tree/main/2_ELT_Prefect/analytics/models/mart)
- - *.sql* files in sub-folder *'staging'*: [models/staging](https://github.com/DoThNg/Data-Engineering-Projects/tree/main/2_ELT_Prefect/analytics/models/staging)
+ - `.sql` files in sub-folder `mart`: [models/mart](https://github.com/DoThNg/Data-Engineering-Projects/tree/main/2_ELT_Prefect/analytics/models/mart)
+ - `.sql` files in sub-folder `staging`: [models/staging](https://github.com/DoThNg/Data-Engineering-Projects/tree/main/2_ELT_Prefect/analytics/models/staging)
 
 The overall dbt project structure is as follows:
 
