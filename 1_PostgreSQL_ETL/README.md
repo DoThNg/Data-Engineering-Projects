@@ -3,8 +3,8 @@
 
 ### Introduction
 This is just a simple practice to perform ELT process, including:
-1. Task 1: Loading files (*.parquet*) into a local PostgreSQL database.
-2. Task 2: Transforming dataset with dbt. The transformed dataset can be used to build BI Dashboards later.
+1. **Task 1**: Loading files (*.parquet*) into a local PostgreSQL database.
+2. **Task 2**: Transforming dataset with dbt. The transformed dataset can be used to build BI Dashboards later.
 
 The dataset used in this practice include:
 1. TLC Trip Record Data for green taxi (format: *parquet files*).
