@@ -57,7 +57,7 @@ Tech stack:
 
 Run the following commands to set up dbt project: 
 - Project setup: `dbt init analytics` (In this Practice, Project Name is **analytics**)
-- Create a YAML file (*profiles.yml*) in the **./analytics/** directory (Reference: [profiles.yml](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/2_ELT_Prefect/analytics/profiles.yml)). (Note: *profiles.yml* is generally placed outside of dbt project to avoid sensitive credentials being checked in to version control, however in this practice, for just one-time local implementation, this file and *dbt_project.yml* will be in the same directory)
+- Create a YAML file - `profiles.yml` in the **./analytics/** directory (Reference: [profiles.yml](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/2_ELT_Prefect/analytics/profiles.yml)). (**Note**: *profiles.yml* is generally placed outside of dbt project to avoid sensitive credentials being checked in to version control, however in this practice, for just one-time local implementation, this file and *dbt_project.yml* will be in the same directory)
 - Provide info (e.g., host, port, user, etc.) related to PostgreSQL database in this YAML file - `profiles.yml`. For this practice, set 'dev' to 'target' (target: dev))
 - Create a sub-folder 'seeds' in project folder and add the file to the seeds directory, with a .csv file extension (In this practice, `taxi_zone_lookup.csv` file will be used)
 - Create sub-folders `staging` and `mart` in folder `models`.
