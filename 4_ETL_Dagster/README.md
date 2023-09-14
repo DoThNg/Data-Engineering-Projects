@@ -6,7 +6,7 @@ The objective of this practice is to get a data pipeline up and running quickly 
 1. **Task 1**: Extracting data (*parquet files*) from online source (website) to a local machine.
 2. **Task 2**: Transforming this data, using Pandas library.
 3. **Task 3**: Loading transformed data into a local PostgreSQL database.
-4. [**Optional**]: Based on the loaded data in Task 3, build a quick BI Dashboard using [streamlit](https://streamlit.io/) (**Note**: This task is optional and is not the focus of this data pipeline practice)
+4. [**Optional**]: Based on the loaded data in Task 3, build a quick BI Dashboard using [Streamlit](https://streamlit.io/) (**Note**: This task is optional and is not the focus of this data pipeline practice)
 
 The above workflow will be developed locally with **Dagster**. Further info on Dagster can be found in the following: https://dagster.io/
 
