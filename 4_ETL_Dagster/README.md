@@ -6,6 +6,7 @@ The objective of this practice is to get a data pipeline up and running quickly 
 1. **Task 1**: Extracting data (*parquet files*) from online source (website) to a local machine.
 2. **Task 2**: Transforming this data, using Pandas library.
 3. **Task 3**: Loading transformed data into a local PostgreSQL database.
+4. [**Optional**]: Based on the loaded data in Task 3, build a quick BI Dashboard using streamlit (This is not the focus of this practice)
 
 The above workflow will be developed locally with **Dagster**. Further info on Dagster can be found in the following: https://dagster.io/
 
@@ -62,3 +63,17 @@ Tech stack:
 The overall view of data pipeline is as follows:
 
   ![data pipeline](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/4_ETL_Dagster/docs/dagster_data_pipeline.png)
+
+---
+
+[**Optional**]: Building a Dashboard with loaded data
+- **Step 1**: Run command: `pip install streamlit==1.26.0`
+- **Step 2**: Save the [streamlit_app.py](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/4_ETL_Dagster/streamlit_app.py) in the folder where the virtual environment for project is created (same directory with `.env` file)
+- **Step 3**: Run command `streamlit run streamlit_app.py`   
+
+After running step 3, a web app containing the dashboard will pop up as follows:
+
+![streamlit_app](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/4_ETL_Dagster/docs/taxi_dashboard.png)
+
+
+
