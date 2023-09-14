@@ -68,7 +68,7 @@ The overall view of data pipeline is as follows:
 
 [**Optional**]: Building a Dashboard with loaded data and Streamlit 
 - **Step 1**: Run command: `pip install streamlit==1.26.0`
-- **Step 2**: Save the [streamlit_app.py](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/4_ETL_Dagster/streamlit_app.py) in the folder where the virtual environment for project is created (same directory with `.env` file)
+- **Step 2**: Save the file - [streamlit_app.py](https://github.com/DoThNg/Data-Engineering-Projects/blob/main/4_ETL_Dagster/streamlit_app.py) in the folder where the virtual environment for project is created (same directory with `.env` file)
 - **Step 3**: Run command `streamlit run streamlit_app.py`   
 
 After running step 3, a web app containing the dashboard will pop up as follows:
