@@ -111,4 +111,5 @@ def run_etl_workflow(name = "elt workflow'"):
     return dbt_workflow
 
 # Run entire workflow
-run_etl_workflow()
+if __name__ == "__main__":
+    run_etl_workflow()
