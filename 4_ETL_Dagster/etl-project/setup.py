@@ -9,7 +9,7 @@ setup(
         "pandas==2.1.0",
         "psycopg2==2.9.7",
         "python-dotenv==1.0.0",
-        "pyarrow==13.0.0"
+        "pyarrow==14.0.1"
     ],
     extras_require={"dev": ["dagster-webserver", "pytest"]},
 )
